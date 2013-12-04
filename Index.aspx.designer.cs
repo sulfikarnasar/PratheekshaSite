@@ -22,22 +22,22 @@ namespace PratheekshaSite {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// username_txt control.
+        /// uname_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username_txt;
+        protected global::System.Web.UI.WebControls.TextBox uname_txt;
         
         /// <summary>
-        /// password_txt control.
+        /// pass_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password_txt;
+        protected global::System.Web.UI.WebControls.TextBox pass_txt;
         
         /// <summary>
         /// Button1 control.

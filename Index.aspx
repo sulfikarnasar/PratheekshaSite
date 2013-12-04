@@ -32,14 +32,14 @@
             <tr>
                 <td class="auto-style1"><h5>Username</h5></td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="username_txt" runat="server" Width="200px" required="req"></asp:TextBox>
+                    <asp:TextBox ID="uname_txt" runat="server" Width="200px" required="req"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style1"><h5>Password</h5></td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="password_txt" runat="server" Width="200px" TextMode="Password" required="req"></asp:TextBox>
+                    <asp:TextBox ID="pass_txt" runat="server" Width="200px" TextMode="Password" required="req"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-primary"/>
