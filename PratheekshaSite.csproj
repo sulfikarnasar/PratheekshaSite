@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\snasar\Desktop\AjaxControlToolkit.Binary.NET35\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -66,8 +70,16 @@
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="HomePage.aspx" />
+    <Content Include="images\autumn.jpg" />
+    <Content Include="images\dew_drops.jpg" />
+    <Content Include="images\green_nature_dual_monitor.jpg" />
+    <Content Include="images\japan_digital_nature.jpg" />
     <Content Include="images\logo.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="markentries.aspx" />
+    <Content Include="staffregistration.aspx" />
+    <Content Include="StudentRegistration.aspx" />
+    <Content Include="studentsDetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,7 +97,35 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="markentries.aspx.cs">
+      <DependentUpon>markentries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="markentries.aspx.designer.cs">
+      <DependentUpon>markentries.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staffregistration.aspx.cs">
+      <DependentUpon>staffregistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staffregistration.aspx.designer.cs">
+      <DependentUpon>staffregistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentsDetails.aspx.cs">
+      <DependentUpon>studentsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentsDetails.aspx.designer.cs">
+      <DependentUpon>studentsDetails.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -95,7 +135,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ptc_code_lib\ptc_code_lib.csproj">
+      <Project>{658237b5-3865-43ed-9364-b81e3f0652f0}</Project>
+      <Name>ptc_code_lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

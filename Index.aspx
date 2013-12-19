@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Login</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <style type="text/css">
@@ -42,8 +42,16 @@
                     <asp:TextBox ID="pass_txt" runat="server" Width="200px" TextMode="Password" required="req"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-primary"/>
+                    <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-primary" OnClick="Button1_Click"/>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Label ID="msg_lbl" runat="server" Text="Label" class="label label-warning"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
             </tr>
         </table>
     
